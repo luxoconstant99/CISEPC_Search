@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Contact - CISEPC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h1>Contact CISEPC</h1>
+
+<div class="carte">
+
+<form onsubmit="return envoyerMessage()">
+<input type="text" placeholder="Votre nom"><br><br>
+
+<input type="email" placeholder="Votre email"><br><br>
+
+<textarea placeholder="Votre message"></textarea><br><br>
+
+<button type="submit">Envoyer</button>
+
+</form>
+
+</div>
+
+<footer>
+    <p>© 2026 CISEPC - Tous droits réservés</p>
+</footer>
+<script>
+function envoyerMessage() {
+
+    alert("Votre message a bien été préparé. Merci de contacter CISEPC.");
+
+    return false;
+}
+</script>
+
+</body>
+</html>

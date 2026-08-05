@@ -1,0 +1,153 @@
+[
+  {
+    "titre": "CISEPC",
+    "categorie": "Moteur de recherche",
+    "description": "Plateforme de recherche CISEPC avec ses propres données.",
+    "url": "http://localhost:3000"
+  },
+  {
+    "titre": "CISE Production",
+    "categorie": "Entreprise",
+    "description": "Informations sur la production et les services CISEPC.",
+    "url": "http://localhost:3000/services.html"
+  },
+  {
+    "titre": "Services numériques",
+    "categorie": "Service",
+    "description": "Solutions numériques et outils modernes.",
+    "url": "http://localhost:3000/services.html"
+  },
+  {
+    "titre": "Contact CISEPC",
+    "categorie": "Contact",
+    "description": "Page de contact pour obtenir des informations.",
+    "url": "http://localhost:3000/contact.html"
+  },
+  {
+    "titre": "Node.js",
+    "categorie": "Technologie",
+    "description": "Technologie utilisée pour créer le serveur CISEPC.",
+    "url": "https://nodejs.org"
+  },{
+  "titre": "À propos de CISEPC",
+  "categorie": "Information",
+  "description": "Découvrez la mission et les objectifs de CISEPC.",
+  "url": "http://localhost:3000/apropos.html"
+}
+,
+{
+  "titre": "Guide CISEPC",
+  "categorie": "Documentation",
+  "description": "Guide officiel d'utilisation de CISEPC.",
+  "url": "http://localhost:3000/apropos.html"
+},
+{
+  "titre": "Recherche avancée",
+  "categorie": "Recherche",
+  "description": "Utilisez les fonctions avancées de recherche.",
+  "url": "http://localhost:3000"
+},
+{
+  "titre": "Base de données",
+  "categorie": "Technologie",
+  "description": "Organisation des données de CISEPC.",
+  "url": "http://localhost:3000"
+},
+{
+  "titre": "Services web",
+  "categorie": "Service",
+  "description": "Présentation des services numériques.",
+  "url": "http://localhost:3000/services.html"
+},
+{
+  "titre": "Support technique",
+  "categorie": "Assistance",
+  "description": "Obtenir de l'aide sur CISEPC.",
+  "url": "http://localhost:3000/contact.html"
+},
+{
+  "titre": "Entreprise CISEPC",
+  "categorie": "Entreprise",
+  "description": "Informations sur l'entreprise CISEPC.",
+  "url": "http://localhost:3000/apropos.html"
+},
+{
+  "titre": "Développement Web",
+  "categorie": "Technologie",
+  "description": "Création d'applications web modernes.",
+  "url": "http://localhost:3000/services.html"
+},
+{
+  "titre": "Innovation",
+  "categorie": "Projet",
+  "description": "Les projets innovants de CISEPC.",
+  "url": "http://localhost:3000/apropos.html"
+},
+{
+  "titre": "Actualités",
+  "categorie": "Information",
+  "description": "Dernières nouvelles de CISEPC.",
+  "url": "http://localhost:3000"
+},
+{
+  "titre": "Aide",
+  "categorie": "Support",
+  "description": "Centre d'aide de CISEPC.",
+  "url": "http://localhost:3000/contact.html"
+},
+{
+  "titre": "Tutoriels CISEPC",
+  "categorie": "Formation",
+  "description": "Apprenez à utiliser CISEPC étape par étape.",
+  "url": "http://localhost:3000/apropos.html"
+},
+{
+  "titre": "FAQ",
+  "categorie": "Support",
+  "description": "Réponses aux questions fréquentes.",
+  "url": "http://localhost:3000/contact.html"
+},
+{
+  "titre": "Sécurité",
+  "categorie": "Information",
+  "description": "Conseils de sécurité pour les utilisateurs.",
+  "url": "http://localhost:3000/apropos.html"
+},
+{
+  "titre": "Téléchargements",
+  "categorie": "Ressources",
+  "description": "Téléchargez les ressources disponibles.",
+  "url": "http://localhost:3000/services.html"
+},
+{
+  "titre": "Mises à jour",
+  "categorie": "Actualité",
+  "description": "Découvrez les nouveautés de CISEPC.",
+  "url": "http://localhost:3000"
+},
+{
+  "titre": "Documentation API",
+  "categorie": "Développement",
+  "description": "Documentation technique pour les développeurs.",
+  "url": "http://localhost:3000/services.html"
+},
+{
+  "titre": "Communauté",
+  "categorie": "Réseau",
+  "description": "Rejoignez la communauté CISEPC.",
+  "url": "http://localhost:3000/contact.html"
+},
+{
+  "titre": "Partenaires",
+  "categorie": "Entreprise",
+  "description": "Nos partenaires et collaborations.",
+  "url": "http://localhost:3000/apropos.html"
+},
+{
+  "titre": "ChatGPT",
+  "categorie": "Intelligence artificielle",
+  "description": "ChatGPT est un assistant conversationnel développé par OpenAI.",
+  "url": "https://chatgpt.com"
+}
+
+]

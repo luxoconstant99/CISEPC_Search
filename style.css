@@ -1,0 +1,238 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background: #0b4f9c;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Titre */
+h1 {
+    margin-top: 60px;
+    font-size: 45px;
+    color: #0b4f9c;
+}
+
+/* Sous-titre */
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Champ de recherche */
+input {
+    width: 400px;
+    max-width: 90%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #0b4f9c;
+    border-radius: 30px;
+    outline: none;
+    margin-top: 20px;
+}
+
+/* Bouton */
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    background: #0b4f9c;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background: #06356b;
+}
+
+/* Zone des résultats */
+#resultats {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+/* Carte de résultat */
+.resultat {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.resultat h3 {
+    color: #0b4f9c;
+    margin-top: 0;
+}
+
+.resultat p {
+    margin: 8px 0;
+}
+
+/* Pied de page */
+footer {
+    margin-top: 50px;
+    background: #0b4f9c;
+    color: white;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 90%;
+        margin-left: 0;
+    }
+}
+/* Conteneur */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+}
+
+/* Cartes */
+.card,
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover,
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* Titres des cartes */
+.card h2,
+.service-card h2,
+.service-card h3 {
+    color: #0b4f9c;
+}
+
+/* Grille des services */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    width: 300px;
+}
+
+/* Formulaire */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #0b4f9c;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: vertical;
+    margin-top: 15px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card,
+.service-card,
+.resultat {
+    animation: fadeIn 0.6s ease;
+}
+
+/* Liens */
+a {
+    color: #0b4f9c;
+}
+
+a:hover {
+    color: #06356b;
+}
+input,
+textarea {
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+}
+
+button {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}

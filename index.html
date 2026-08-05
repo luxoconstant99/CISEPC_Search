@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CISEPC Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CISEPC Search</h1>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="apropos.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <p>Le moteur de recherche avec ses propres données</p>
+    </header>
+
+    <section class="bienvenue">
+        <h2>Bienvenue sur CISEPC Search</h2>
+
+        <p>
+            Recherchez rapidement des informations dans notre base de données.
+        </p>
+    </section>
+
+    <section class="recherche-box">
+        <input
+            type="text"
+            id="recherche"
+            placeholder="Rechercher..."
+            onkeydown="if(event.key==='Enter'){chercher()}">
+
+        <button onclick="chercher()">🔍 Rechercher</button>
+    </section>
+
+    <div id="resultats"></div>
+
+    <section class="bienvenue">
+        <h2>Pourquoi choisir CISEPC ?</h2>
+
+        <p>
+            CISEPC permet de rechercher rapidement des informations
+            dans une base de données organisée, rapide et simple à utiliser.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 CISEPC - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
