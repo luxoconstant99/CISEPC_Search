@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration CISEPC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Administration CISEPC</h1>
+
+    <div class="admin-form">
+
+        <input id="titre" type="text" placeholder="Titre">
+
+        <input id="categorie" type="text" placeholder="Catégorie">
+
+        <textarea id="description" placeholder="Description"></textarea>
+
+        <input id="url" type="text" placeholder="URL">
+
+        <button onclick="ajouter()">Ajouter</button>
+
+        <p id="message"></p>
+
+    </div>
+
+<script>
+
+async function ajouter() {
+
+    let donnees = {
+        titre: document.getElementById("titre").value,
+        categorie: document.getElementById("categorie").value,
+        description: document.getElementById("description").value,
+        url: document.getElementById("url").value
+    };
+
+    let reponse = await fetch("/ajouter", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(donnees)
+    });
+
+    let resultat = await reponse.json();
+
+    document.getElementById("message").innerHTML = resultat.message;
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,8 +1,7 @@
 const { MongoClient } = require("mongodb");
 const fs = require("fs");
 
-const url = "mongodb://127.0.0.1:27017";
-
+const url = "mongodb+srv://luxoconstant99_db_user:Mackonbi99@cluster0.kuquqis.mongodb.net/cisePC?retryWrites=true&w=majority&appName=Cluster0";
 const client = new MongoClient(url);
 
 async function importer() {
