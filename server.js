@@ -44,13 +44,7 @@ app.get("/data", async (req, res) => {
     // Ajouter une nouvelle donnée
 app.post("/ajouter", async (req, res) => {
 
-    const { password, ...nouvelleDonnee } = req.body;
-
-    if (password !== ADMIN_PASSWORD) {
-        return res.json({
-            message: "Mot de passe incorrect"
-        });
-    }
+    const nouvelleDonnee = req.body;
 
     await collection.insertOne(nouvelleDonnee);
 
@@ -59,7 +53,6 @@ app.post("/ajouter", async (req, res) => {
     });
 
 });
-
     app.listen(3000, () => {
 
         console.log("CISEPC fonctionne sur http://localhost:3000");
