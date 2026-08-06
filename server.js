@@ -1,11 +1,11 @@
 const express = require("express");
 const { MongoClient } = require("mongodb");
-
 const app = express();
+
+const ADMIN_PASSWORD = "CISEPC2026";
 
 app.use(express.static(__dirname));
 
-app.use(express.json());
 const client = new MongoClient(process.env.MONGODB_URI);
 async function start() 
 {
@@ -42,18 +42,23 @@ app.get("/data", async (req, res) => {
 
 
     // Ajouter une nouvelle donnée
-    app.post("/ajouter", async (req, res) => {
+app.post("/ajouter", async (req, res) => {
 
-        const nouvelleDonnee = req.body;
+    const { password, ...nouvelleDonnee } = req.body;
 
-        await collection.insertOne(nouvelleDonnee);
-
-        res.json({
-            message: "Ajout réussi !"
+    if (password !== ADMIN_PASSWORD) {
+        return res.json({
+            message: "Mot de passe incorrect"
         });
+    }
 
+    await collection.insertOne(nouvelleDonnee);
+
+    res.json({
+        message: "Ajout réussi !"
     });
 
+});
 
     app.listen(3000, () => {
 
