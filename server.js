@@ -16,13 +16,29 @@ async function start()
 
 
     // Recherche des données
-    app.get("/data", async (req, res) => {
+app.get("/data", async (req, res) => {
 
-        const data = await collection.find().toArray();
+    let data = await collection.find().toArray();
 
-        res.json(data);
+    data = data.map(item => {
+
+        if (item.url) {
+            item.url = item.url.replace(
+                "http://localhost:3000",
+                "https://cisepc-search.onrender.com"
+            );
+        }
+
+        return item;
 
     });
+
+    res.json(data);
+
+});
+
+
+    
 
 
     // Ajouter une nouvelle donnée
