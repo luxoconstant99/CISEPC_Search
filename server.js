@@ -6,10 +6,9 @@ const app = express();
 app.use(express.static(__dirname));
 
 app.use(express.json());
-
-const client = new MongoClient("mongodb+srv://luxoconstant99_db_user:Mackonbi99@cluster0.kuquqis.mongodb.net/cisePC?retryWrites=true&w=majority&appName=Cluster0");
-async function start() {
-
+const client = new MongoClient(process.env.MONGODB_URI);
+async function start() 
+{
     await client.connect();
 
     const db = client.db("cisePC");
